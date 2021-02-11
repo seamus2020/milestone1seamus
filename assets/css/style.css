@@ -4,7 +4,26 @@
 background-image: url("../images/banner 2.jpg");
 height: 400px;
 background-size: cover;
+margin-bottom: 0%;
 background-position: center;
+transition: all .5s ease-in-out ;
+-moz-transition: all .5s ease-in-out ;
+-webkit-transition: all .5s ease-in-out 
+ 
 }
   
+.container-fluid {
+    background-color: lightblue;
+    height:100px
 
+}
+
+.container-fluid h1 {
+    color:white;
+    text-align: center;
+    margin-top:2px;
+    margin-bottom: 5px;
+}
+.navbar-default {
+    background-color: #F8F8F8;
+    border-color: #E7E7E7;}
