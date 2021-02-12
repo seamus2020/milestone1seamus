@@ -13,7 +13,7 @@ transition: all .5s ease-in-out ;
 }
   
 .container-fluid {
-    background-color: lightblue;
+    background-color: rgb(26, 39, 221);
     height:100px
 
 }
@@ -27,3 +27,37 @@ transition: all .5s ease-in-out ;
 .navbar-default {
     background-color: #F8F8F8;
     border-color: #E7E7E7;}
+    .social-networks{
+    text-align: center;
+
+}
+.social-networks{
+    text-align: center;
+
+}
+footer{
+    height: 150px;
+    color: black;
+}
+
+.social-networks li{
+    display: inline;
+}
+
+.social-networks i{
+    font-size: 160%;
+    margin: 1%;
+    padding: 5%;
+    color: #777777;
+}
+
+   .social-networks i {
+     text-align: center;
+     margin-top: 5px;
+    color: ghostwhite;
+
+
+   }
+  
+  
+ 
