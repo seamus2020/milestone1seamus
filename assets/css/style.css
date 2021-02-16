@@ -11,6 +11,16 @@ transition: all .5s ease-in-out ;
 -webkit-transition: all .5s ease-in-out 
  
 }
+ .jumbotron-special{
+background-image: url("../images/skills banner.jpg");
+background-repeat: no-repeat;
+height: 400px;
+background-size: contain;
+margin-bottom: 0%;
+background-position:center ;
+transition: all .5s ease-in-out ;
+-moz-transition: all .5s ease-in-out ;
+-webkit-transition: all .5s ease-in-out}
   
 .container-fluid {
     background-color: #0275d8;
@@ -29,11 +39,9 @@ transition: all .5s ease-in-out ;
 }
                                                            
 
+                                                                                                                                                                                                                                                                                                                                                                                                                      
 
-    .social-networks{
-    text-align: center;                                                                                                                                                                                                                                                                                                                                                                                                                       
 
-}
 .social-networks{   
     text-align: center;
 
@@ -93,21 +101,24 @@ main {
 
 .contact-form {
     text-align: center;
+
+   
 }
 .form-section {
     margin-top: 100px;
     color:#fff;
-    max-width:400px;
-    padding:30px;
     position: sticky;
     padding: 30px;
-    left:38%; 
-    
+   left: 38%;
 
 }
 
 
-    
+   div .form-section  {
+   text-align: center;
+   display: inline-block;
+   
+  }
 
     
 
@@ -157,3 +168,6 @@ main {
     padding-top: 30px;
 }
 
+body{
+    overflow-y: hidden;
+}
