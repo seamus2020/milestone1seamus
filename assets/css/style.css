@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
 
+.body{
+    height: 100%;
+}
+
 .jumbotron {
 background-image: url("../images/banner 2.jpg");
-height: 400px;
+height: 360px;
 background-size: cover;
 margin-bottom: 0%;
 background-position: center;
@@ -11,11 +15,13 @@ transition: all .5s ease-in-out ;
 -webkit-transition: all .5s ease-in-out 
  
 }
+
+
  .jumbotron-special{
 background-image: url("../images/skills banner.jpg");
 background-repeat: no-repeat;
-height: 400px;
-background-size: contain;
+height: 360px;
+background-size: cover;
 margin-bottom: 0%;
 background-position:center ;
 transition: all .5s ease-in-out ;
@@ -24,21 +30,33 @@ transition: all .5s ease-in-out ;
   
 .container-fluid {
     background-color: #0275d8;
-    height:100px
+    height:50px
 
 }
+
+.navbar{
+    height: 50px;
+}
+
 
 
 
 .container-fluid h1 {
     color:white;
     text-align: center;
-    margin-top:2px;
+    margin-top:0px;
     margin-bottom: 5px;
-    padding-top: 15px;
+    padding-top: 1px;
+    font-family:"Roboto", sans-serif;
+    font-size:40px ;
+    font-weight: 600;
 }
                                                            
-
+.footer  {
+    height: 50px;
+    background-color:#0275d8;
+  
+}
                                                                                                                                                                                                                                                                                                                                                                                                                       
 
 
@@ -53,13 +71,13 @@ transition: all .5s ease-in-out ;
 .social-networks  i {
     font-size: 200%;
     margin: 1%;
-    padding: 3%;
-    text-align: center;
-     margin-top: 5px;
+    padding-top: 2px;
+    margin-top: 2px;
     color: ghostwhite;
     
     
 }
+
 
 main {
     
@@ -95,7 +113,7 @@ main {
 
 .icons p{
     font-size: 20px;
-    font-family: roboto;
+    font-family:"Roboto", sans-serif;
     text-align: justify;
 }
 
@@ -131,29 +149,42 @@ main {
     font-weight:500;
     background-color:rgb(17, 182, 233);
     border-color: rgb(49, 197, 30);
-    color: #fff;
+    color: black;
+}
     
-    
-    
+ .footer {
+     background-color:#0275d8 
+     
+
+ }  
+  .footer P {
+     color:ghostwhite;
+ }
+ #image  {
+  background-image: url("../images/inch\ beach.jpg");
+  background-size: cover;
 }
 
+
 .form-section{
-    background-image: url("../images/inch\ beach.jpg");
+    background-color:white;
     background-size: cover;
     height: 600px;
     margin-top: 30px;
     max-width: 400px;
+   opacity: 0.8;
+   color:black
 }
 .text-input {
     background:transparent;
-    color:#fafafa;
+    color:#0c0c0c;
     width:100%;
     height:25px;
     margin:5px 0 20px 0;
 }
 .text-area{
    background:transparent;
-    color:#fafafa;
+    color:#0c0c0c;
     width:100%;
     height:60px;
     margin:5px 0 20px 0;
@@ -170,4 +201,8 @@ main {
 
 body{
     overflow-y: hidden;
+}
+
+.ms auto{
+    text-align: right;
 }
