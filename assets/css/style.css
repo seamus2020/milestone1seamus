@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
 
-.body{
-    height: 100%;
-}
+
 
 .jumbotron {
 background-image: url("../images/banner 2.jpg");
@@ -199,9 +197,6 @@ main {
     padding-top: 30px;
 }
 
-body{
-    overflow-y: hidden;
-}
 
 .ms auto{
     text-align: right;
