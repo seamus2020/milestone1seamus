@@ -44,10 +44,10 @@ main {
 
   
 
-/* This is home page*/
+/* This is home page jumbotron*/
 .jumbotron {
 background-image: url("../images/banner 2.jpg");
-height: 380px;
+height: 420px;
 background-size: cover;
 margin-bottom: 0%;
 background-position: center;
@@ -62,6 +62,7 @@ transition: all .5s ease-in-out ;
 .container-fluid {
     background-color: #2089F2;
     height:50px
+   
 
 }
 
@@ -156,7 +157,8 @@ transition: all .5s ease-in-out ;
     background-color:white;
     background-size: cover;
     height: 600px;
-    margin-top: 100px;
+    margin-top: 50px;
+    margin-bottom: 30px;
     position: sticky;
     padding: 30px;
     left: 38%;
