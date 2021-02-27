@@ -104,6 +104,12 @@ transition: all .5s ease-in-out ;
    
 }
 
+ div .form-section  {
+   text-align: center;
+   display: inline-block;
+
+  }
+
 
  
   .flex-container {
@@ -132,16 +138,16 @@ transition: all .5s ease-in-out ;
  #image  {
   background-image: url("../images/inchbeach.jpg");
   background-size: cover;
-  
+  background-attachment:fixed ;
+  height:100vh;
 }
 
 
 .form-section{
     background-color:white;
-    background-size: cover;
     height: 600px;
-    margin-top: 50px;
-    margin-bottom: 30px;
+    margin-top: 0px;
+    margin-bottom: 0px;
     position: sticky;
     padding: 30px;
     left: 38%;
@@ -260,10 +266,10 @@ transition: all .5s ease-in-out ;
     
 }
 /* anchoring my footer with flexbox*/
-
 html, body {
   height: 100%;
 }
+
 body {
   display: flex;
   flex-direction: column;
