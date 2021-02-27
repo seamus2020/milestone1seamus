@@ -146,7 +146,7 @@ transition: all .5s ease-in-out ;
 .form-section{
     background-color:white;
     height: 600px;
-    margin-top: 0px;
+    margin-top: 20px;
     margin-bottom: 0px;
     position: sticky;
     padding: 30px;
