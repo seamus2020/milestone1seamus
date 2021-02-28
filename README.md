@@ -45,7 +45,7 @@ When deciding on pages and features to help me achieve my goals and objectives, 
 
 ### Structure:
 known people read left to right was stuck in my head the whole time during this project and I always thought my navigation should be on the left-hand side but opted for right under advice but arranged the most important elements of navigation left to right.
-### Skeliton:
+### Skeleton:
 
 ![website mocks](assets/images/seamusmalonepage.png) 
 
