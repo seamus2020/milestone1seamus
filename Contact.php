@@ -55,7 +55,7 @@
 
      
        <div class="form-section flex-container">
-       <form  class="contact-form">
+       <form action="" class="contact-form">
          <h2 class="uppercase-text">Contact me </h2> 
          <label class="form-label" for="fname">First Name</label>
         <input class="text-input" id="fname" type="text" name="first_name" required>
@@ -64,7 +64,7 @@
          <label for="email">Email Address</label>
         <input class="text-input" id="email" type="email" name="email_address" required>
          <label for="Message">Message</label>
-        <textarea class="text-area" rows="3" id="Message"  name="Message" required></textarea>
+        <textarea class="text-area" rows="3" id="Message"  name="message" required></textarea>
          <input class="submit-button" type="submit" value="Submit">
              
        </form>
@@ -90,8 +90,29 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    
+   <?php 
+if(isset($_POST['submit'])){
+    $to = "mattshallow@yahoo.com"; // this is your Email address
+    $from = $_POST['email']; // this is the sender's Email address
+    $first_name = $_POST['first_name'];
+    $last_name = $_POST['last_name'];
+    $subject = "Form submission";
+    $subject2 = "Copy of your form submission";
+    $message = $first_name . " " . $last_name . " wrote the following:" . "\n\n" . $_POST['message'];
+    $message2 = "Here is a copy of your message " . $first_name . "\n\n" . $_POST['message'];
+
+    $headers = "From:" . $from;
+    $headers2 = "From:" . $to;
+    header('Location: Contact.html');
+    mail($to,$subject,$message,$headers);
+    mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
+    // echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
+    // You can also use header('Location: thank_you.php'); to redirect to another page.
+    // You cannot use header and echo together. It's one or the other.
+    }
+?> 
     
 </body>
 
 </html>
+
