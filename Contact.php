@@ -92,7 +92,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
    <?php 
 if(isset($_POST['submit'])){
-    $to = "mattshallow@yahoo.com"; // this is your Email address
+    $to = "maloneseamus@yahoo.com"; // this is your Email address
     $from = $_POST['email']; // this is the sender's Email address
     $first_name = $_POST['first_name'];
     $last_name = $_POST['last_name'];
@@ -103,7 +103,7 @@ if(isset($_POST['submit'])){
 
     $headers = "From:" . $from;
     $headers2 = "From:" . $to;
-    header('Location: Contact.html');
+    header('Location: Contact.php');
     mail($to,$subject,$message,$headers);
     mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
     // echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
